@@ -1,14 +1,12 @@
 {
-  "name": "csom-node",
+  "name": "csom-node-example",
   "version": "0.0.1",
-  "description": "Examples for CSOM node",
-  "main": "./lib/csom.js",
+  "description": "Examples for csom-node",
+  "main": "csom-loader.js",
   "author": {
     "name": "Vadim Gremyachev",
     "email": "vvgrem@gmail.com"
   },
   "dependencies": {
-    "xml2js": "^0.4.15",
-    "xmlhttprequest": "^1.8.0"
   }
 }

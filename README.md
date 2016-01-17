@@ -4,6 +4,10 @@ The library provides a SharePoint Client Object Model (CSOM) API for Node.js app
 
 The current version supports SharePoint Online CSOM library (v 16) The remote authentication is performed via Claims-Based Authentication.
 
+### Installation
+
+`$ npm install csom-node`
+
 
 ### API
 
@@ -23,7 +27,7 @@ The current version supports SharePoint Online CSOM library (v 16) The remote au
 The fisrt example demonstrates how to read SP.Web object:
 
 ````
-var csomapi = require('../lib/csom-loader.js');
+var csomapi = require('csom-node');
 
 var settings = {
     url: "https://contoso.sharepoint.com/",
@@ -58,7 +62,7 @@ The following example demonstrates how to perform CRUD operations against list i
 
 ````
 
-var csomapi = require('../lib/csom-loader.js');
+var csomapi = require('csom-node');
 
 var settings = {
     url: "https://contoso.sharepoint.com/",

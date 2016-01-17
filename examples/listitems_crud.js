@@ -1,9 +1,9 @@
-﻿var csomapi = require('../lib/csom-loader.js');
+﻿var csomapi = require('csom-node');
 
 var settings = {
     url: "https://contoso.sharepoint.com/",
     username: "jdoe@contoso.onmicrosoft.com",
-    password: ""
+    password: "password"
 };
 
 csomapi.setLoaderOptions({ url: settings.url, serverType: 'local', packages: [] });
@@ -12,7 +12,7 @@ csomapi.setLoaderOptions({ url: settings.url, serverType: 'local', packages: [] 
 var authCtx = new AuthenticationContext(settings.url);
 authCtx.acquireTokenForUser(settings.username, settings.password, function(err, data) {
 
-    var ctx = new SP.ClientContext("/sites/news");
+    var ctx = new SP.ClientContext("/");
     authCtx.setAuthenticationCookie(ctx); //authenticate
 
     var web = ctx.get_web();

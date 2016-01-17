@@ -1,9 +1,9 @@
-﻿var csomapi = require('../lib/csom-loader.js');
+﻿var csomapi = require('csom-node');
 
 var settings = {
     url: "https://contoso.sharepoint.com/",
     username: "jdoe@contoso.onmicrosoft.com",
-    password: ""
+    password: "password"
 };
 
 csomapi.setLoaderOptions({url: settings.url, serverType: 'local', packages: [] });
