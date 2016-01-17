@@ -1,6 +1,6 @@
-# SharePoint Client Object Model (CSOM) API for node
+# SharePoint Client Object Model (CSOM) API for Node.js
 
-The library provides a SharePoint Client Object Model (CSOM) API for node applications.  
+The library provides a SharePoint Client Object Model (CSOM) API for Node.js applications.  
 
 The current version supports SharePoint Online CSOM library (v 16) The remote authentication is performed via Claims-Based Authentication.
 
