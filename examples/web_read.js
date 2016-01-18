@@ -1,18 +1,18 @@
-﻿var csomapi = require('csom-node');
-
-var settings = {
-    url: "https://contoso.sharepoint.com/",
-    username: "jdoe@contoso.onmicrosoft.com",
-    password: "password"
-};
-
-csomapi.setLoaderOptions({url: settings.url, serverType: 'local', packages: [] });
+﻿var csomapi = require('csom-node'),
+    settings = require('./settings.js').settings;
 
 
-var authCtx = new AuthenticationContext(settings.url);
+var webAbsoluteUrl = settings.tenantUrl + settings.webUrl;
+
+
+csomapi.setLoaderOptions({url: webAbsoluteUrl, serverType: 'local', packages: [] });
+
+
+var authCtx = new AuthenticationContext(webAbsoluteUrl);
 authCtx.acquireTokenForUser(settings.username, settings.password, function (err, data) {
     
-    var ctx = new SP.ClientContext("/");
+    
+    var ctx = new SP.ClientContext(settings.webUrl);
     authCtx.setAuthenticationCookie(ctx);
     
     var web = ctx.get_web();
