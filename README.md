@@ -12,11 +12,16 @@ The current version supports SharePoint Online CSOM library (v 16) The remote au
 ### API
 
 
- - CSOM API - currently only [Core object library for JavaScript](https://msdn.microsoft.com/en-us/library/office/jj193050.aspx) is supported  
-
+ - CSOM API - currently only [Core object library for JavaScript](https://msdn.microsoft.com/en-us/library/office/jj193050.aspx) is supported plus some additional packages listed below 
 
  - `AuthenticationContext` - represents an object that provides credentials to access SharePoint Online resources.
 
+
+ **The list of supported CSOM API packages**
+
+ - [core](https://msdn.microsoft.com/en-us/library/office/jj193050.aspx)
+
+ - [taxonomy](https://msdn.microsoft.com/en-us/library/office/jj857114.aspx)
 
 
 # Usage

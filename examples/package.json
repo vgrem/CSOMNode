@@ -8,6 +8,6 @@
     "email": "vvgrem@gmail.com"
   },
   "dependencies": {
-    "csom-node": "0.0.2"
+    "csom-node": "^0.1.0"
   }
 }
