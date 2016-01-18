@@ -17,7 +17,7 @@ The current version supports SharePoint Online CSOM library (v 16) The remote au
  - `AuthenticationContext` - represents an object that provides credentials to access SharePoint Online resources.
 
 
- **The list of supported CSOM API packages**
+**The list of supported CSOM API packages**
 
  - [core](https://msdn.microsoft.com/en-us/library/office/jj193050.aspx)
 
