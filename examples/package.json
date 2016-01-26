@@ -8,6 +8,9 @@
     "email": "vvgrem@gmail.com"
   },
   "dependencies": {
-    "csom-node": "^0.1.0"
+    "body-parser": "^1.14.2",
+    "csom-node": "^0.1.0",
+    "express": "^4.13.4",
+    "todomvc": "^0.1.1"
   }
 }
