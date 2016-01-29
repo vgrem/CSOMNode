@@ -1,11 +1,11 @@
-﻿var csomapi = require('../lib/csom-loader.js'),
+﻿var csomapi = require('csom-node'),
     settings = require('./settings.js').settings;
 
 
 var webAbsoluteUrl = settings.tenantUrl + settings.webUrl;
 
 
-csomapi.setLoaderOptions({ url: webAbsoluteUrl, packages: ['userprofile'] });
+csomapi.setLoaderOptions({ url: webAbsoluteUrl, packages: ['userprofile','publishing'] });
 
 
 var authCtx = new AuthenticationContext(webAbsoluteUrl);

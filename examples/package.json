@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "body-parser": "^1.14.2",
-    "csom-node": "^0.1.0",
+    "csom-node": "^0.1.1",
     "express": "^4.13.4",
     "todomvc": "^0.1.1"
   }
