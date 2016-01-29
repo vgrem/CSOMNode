@@ -3,7 +3,7 @@
 
 var webAbsoluteUrl = settings.tenantUrl + settings.webUrl;
 
-csomapi.setLoaderOptions({ url: webAbsoluteUrl, serverType: 'local', packages: [] });
+csomapi.setLoaderOptions({ url: webAbsoluteUrl });
 
 
 var authCtx = new AuthenticationContext(webAbsoluteUrl);
