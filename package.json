@@ -7,6 +7,14 @@
     "name": "Vadim Gremyachev",
     "email": "vvgrem@gmail.com"
   },
+  "homepage": "https://github.com/vgrem/CSOMNode",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vgrem/CSOMNode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vgrem/CSOMNode/issues"
+  },
   "dependencies": {
     "xml2js": "^0.4.15",
     "xmlhttprequest": "^1.8.0"
