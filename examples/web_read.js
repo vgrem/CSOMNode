@@ -1,4 +1,4 @@
-﻿var csomapi = require('csom-node'),
+﻿var csomapi = require('../lib/csom-loader.js'),
     settings = require('./settings.js').settings;
 
 

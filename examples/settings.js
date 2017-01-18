@@ -1,8 +1,8 @@
 ﻿var settings = {
     tenantUrl: "https://tenant.sharepoint.com",
     webUrl: "/",  //Note:for root web set url to '/'
-    username: "username@tenant.onmicrosoft.com",
-    password: ""
+    username: "mattim@tenant.onmicrosoft.com",
+    password: "P@ssw0rd"
 };
 
 exports.settings = settings;
