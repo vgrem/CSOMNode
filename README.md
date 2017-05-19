@@ -25,6 +25,8 @@ The current version supports SharePoint Online CSOM library (v 16) The remote au
 
  - [userprofile](https://msdn.microsoft.com/en-us/library/office/jj628683.aspx)
 
+ - policy
+
 # Usage
 
 
