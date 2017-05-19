@@ -1,6 +1,6 @@
 {
   "name": "csom-node",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "SharePoint Client Object Model (CSOM) API for node",
   "main": "./lib/csom-loader.js",
   "author": {
