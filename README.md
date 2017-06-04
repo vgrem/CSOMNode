@@ -29,10 +29,10 @@ The current version supports SharePoint Online CSOM library (v 16) The remote au
 
 # Usage
 
+**Authentication**
 
-**Examples**
+Authenticate with _user credentials_
 
-The fisrt example demonstrates how to read SP.Web object:
 
 ````
 var csomapi = require('csom-node');
@@ -64,6 +64,41 @@ authCtx.acquireTokenForUser(settings.username, settings.password, function (err,
 });
 
 ````
+
+Authenticate with _app principal_ credentials (client id & client secret)
+
+````
+var csomapi = require("csom-node");
+ 
+var settings = {
+    url: "https://contoso.sharepoint.com/",
+    clientId: "YOUR-GUID-GOES-HERE",
+    clientSecret: "YOUR-CLIENT-SECRET-GOES-HERE"
+};
+ 
+csomapi.setLoaderOptions({url: settings.url});  //set CSOM library settings
+ 
+var authCtx = new AuthenticationContext(settings.url);
+authCtx.acquireTokenForApp(settings.clientId, settings.clientSecret, function (err, data) {
+    
+    var ctx = new SP.ClientContext("/");  //set root web
+    authCtx.setAuthenticationCookie(ctx);  //authenticate
+    
+    //retrieve SP.Web client object
+    var web = ctx.get_web();
+    ctx.load(web);
+    ctx.executeQueryAsync(function () {
+        console.log(web.get_title());
+    },
+    function (sender, args) {
+        console.log('An error occured: ' + args.get_message());
+    });
+      
+});
+
+````
+
+**Working with List Items**
 
 The following example demonstrates how to perform CRUD operations against list items:    
 

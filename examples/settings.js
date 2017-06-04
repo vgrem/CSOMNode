@@ -1,7 +1,7 @@
 ﻿var settings = {
-    tenantUrl: "https://tenant.sharepoint.com",
+    tenantUrl: "https://mediadev19.sharepoint.com",
     webUrl: "/",  //Note:for root web set url to '/'
-    username: "mattim@tenant.onmicrosoft.com",
+    username: "mattim@mediadev19.onmicrosoft.com",
     password: "P@ssw0rd"
 };
 
