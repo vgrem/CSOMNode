@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "examples\\typescript"
+		},
+		{
+			"path": "examples\\todoapp"
+		}
+	],
+	"settings": {}
+}

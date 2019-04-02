@@ -4,6 +4,7 @@ The library provides a SharePoint Client Object Model (CSOM) API for Node.js app
 
 The current version supports SharePoint Online CSOM library (v 16) The remote authentication is performed via Claims-Based Authentication.
 
+
 [![NPM](https://nodei.co/npm/csom-node.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/csom-node/)
 
 
