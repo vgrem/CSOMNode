@@ -1,7 +1,7 @@
 {
   "name": "csom-node",
-  "version": "0.1.6",
-  "description": "SharePoint Client Object Model (CSOM) API for node",
+  "version": "0.1.7",
+  "description": "SharePoint Client Object Model (CSOM) API for Node.Js",
   "main": "./lib/csom-loader.js",
   "author": {
     "name": "Vadim Gremyachev",
@@ -16,7 +16,7 @@
     "url": "https://github.com/vgrem/CSOMNode/issues"
   },
   "dependencies": {
-    "xml2js": "^0.4.15",
+    "xml2js": "^0.4.23",
     "xmlhttprequest": "^1.8.0"
   }
 }

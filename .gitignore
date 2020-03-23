@@ -36,3 +36,4 @@ node_modules
 
 # JetBrains IDE based files
 .idea
+/.vscode/

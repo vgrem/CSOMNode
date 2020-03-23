@@ -8,10 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}\\lib\\csom-loader.js",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
+            "program": "${workspaceFolder}\\lib\\csom-loader.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Update",
+            "program": "${workspaceFolder}/updater/index.js"
         }
     ]
 }
